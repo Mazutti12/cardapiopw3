@@ -1,0 +1,27 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+#container{
+    display: grid ;
+    place-items: left;
+    width: 500px;  
+    padding: 20px;
+    border: solid 1px black;    
+}
+#teste{
+    display: grid;
+    place-items: center;
+}
+#button{
+    background-color: greenyellow;
+
+}
+h1{
+    display: block;
+    position: relative;
+    margin-bottom: 0px;
+    font-size: 26px;
+}
+label{
+    text-align: left;
+}
