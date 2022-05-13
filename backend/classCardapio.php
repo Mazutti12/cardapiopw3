@@ -48,6 +48,8 @@ class Ingredientes
 
 $
 
+
+//fiz pra testa
 //ta dando um erro n sei oq é ta dando como variavel indefinida
 $ingrediente = new Ingredientes();
 $ingrediente->setIngrediente('massa','450kcal');
