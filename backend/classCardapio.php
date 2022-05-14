@@ -9,16 +9,13 @@ class Cardapio
 }
 
 
-class Refeicao 
+class Refeicao extends Ingredientes
 {
     private $idRefeicao;
     private $descricao;
     
 
-    function SomaCalorias($idRefeicas)
-    {
-        //busca no banco de dados todas os incres da refeição em especifico e soma
-    }
+    
 
     
 
@@ -100,14 +97,34 @@ class Ingredientes
             die($e);
         }
     }
+
+    // ta funcionando soma todas as calorias da tabela so tem que fazer um comando sql pra puxar so o que nos queremos
+    function somaCalorias()
+    {
+        $soma = 0;
+        try
+        {
+            $db = new PDO("mysql:host=localhost;dbname=cardapio", "root", "");
+            foreach ($db->query("SELECT * FROM ingredientes") as $ingred)
+            {
+                $soma += $ingred['calorias'];      
+                
+            }
+            return $soma;  
+        } 
+        catch(PDOException $e)
+        {
+            die($e->getMessage());
+        }
+    }
 }
 
 
-/*
 
-                                    todas as funcionalidades de incluir alterar e excluir funcionando
-$ing = new Ingredientes();
-$ing->setNome('massa');
+// tudas fincionalidades testadas a baixo
+                                 
+//$ing = new Ingredientes();
+/*$ing->setNome('massa');
 $ing->setCalorias(200);
 $ing->inserir();
 $ing->setNome('feija');
@@ -118,11 +135,14 @@ $a = $ing->getid();
 echo $a;
 echo "<pre>";
 print_r($ing);
+
+
+$calorias = $ing->somaCalorias();
+echo $calorias;
 */
-
-
-
-
+$a = new Refeicao();
+$soma = $a->somaCalorias();
+echo $soma;
 
 
 
