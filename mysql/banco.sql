@@ -37,4 +37,15 @@ senha varchar(100) not null
 );
 
  
+/*
+                                            Ta dando erro.
+                                            quando testei selvar os dados no banco de 
+                                            dados com o php deu um erro de que a chaves
+                                            estrangeira nao tava corretamente feita acho
+
+
 ALTER TABLE ingredientes ADD CONSTRAINT FK_RefeicaoIngrediente FOREIGN KEY (id_ingredientes) REFERENCES refeicao (id_refeicao);
+
+
+
+*/
