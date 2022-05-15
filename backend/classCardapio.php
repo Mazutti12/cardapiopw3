@@ -9,18 +9,59 @@ class Cardapio
 }
 
 
-class Refeicao extends Ingredientes
+class Refeicao 
 {
     private $idRefeicao;
     private $descricao;
+    // nao sei como armazena isso(dado abaixo) no banco de dados
+    private $ingrdientesRefeicao = [];
+    // chave = ingrediente 
+    //key = caloria 
+    function __construct($nome,$ingredeintes)
+    {      
+        $this->descricao = $nome;
+        $this->ingrdientesRefeicao = $ingredeintes;         
+    }
+
+    function getIngrediente()
+    {
+        return $this->ingrdientesRefeicao;
+    }
+
+
+    //puxar uma refeição em especifico 
+    function pesquisarRefeicao($idRefeicao)
+    {
+        try
+        {
+            $db = new PDO("mysql:host=localhost;dbname=cardapio;","root","");
+            $consulta = $db->prepare("SELECT * FROM refeicao WHERE id_refeicao = :id");
+            $consulta->execute( [":id" => $idRefeicao]);
+            $consulta->setFetchMode(PDO::FETCH_CLASS, 'Refeicao');
+            return $consulta->fetch();
+        }
+        catch(PDOException $e)
+        {
+            die($e);
+        }
+    }
+   
+    function somaCaloria()
+    {
+        $a = $this->ingrdientesRefeicao;
+        $soma = 0;
+            foreach($a as $key=>$value)
+            {
+                $soma +=$value;
+            }
+
+        return $soma;
+    }
     
-
-    
-
-    
-
-
+   
 }
+
+
 
 class Ingredientes 
 {
@@ -28,27 +69,13 @@ class Ingredientes
     private $nome;
     private $calorias;  
 
-    function setNome($n)
-    {
-        $this->nome = $n;
-    }
-    function setCalorias($c)
-    {   
-        $this->calorias = $c;
-    }
-    function getNome()
-    {
-        return $this->name;
-    }
-    function getCalorias()
-    {
-        return $this->calorias;
-    }
-    function getId()
-    {
-        return $this->id;
-    }
+    function setNome($n){$this->nome = $n;}
+    function setCalorias($c){$this->calorias = $c;}
+    function getNome(){return $this->name;}
+    function getCalorias(){return $this->calorias;}
+    function getId(){return $this->id;}
 
+    //fazer alguma verificação pra nao ter dois igredientes iguais
     function inserir()
     {
         try 
@@ -57,7 +84,7 @@ class Ingredientes
             $consulta = $db->prepare("INSERT INTO ingredientes(nome,calorias) VALUES(:nome,:calorias)");
             $consulta-> execute([':nome' =>$this->nome, ':calorias' => $this->calorias]);
 
-            $consulta = $db->prepare("SELECT id_ingredientes FROM ingredientes ORDER BY id_ingredientes DESC LIMIT 1");
+            $consulta = $db->prepare("SELECT id_ingredientes FROM ingredientes ORDER BY id_ingredientes DESC");
             $consulta->execute(); 
             $data = $consulta->fetch(PDO::FETCH_ASSOC);
             $this->id = $data['id_ingredientes'];
@@ -67,6 +94,7 @@ class Ingredientes
             throw new Exception("Ocorreu um erro interno!");
         }
     }
+
     function alterar()
     {
         try
@@ -84,6 +112,7 @@ class Ingredientes
             die($e);
         }
     }
+
     function excluir()
     {
         try
@@ -97,56 +126,38 @@ class Ingredientes
             die($e);
         }
     }
-
-    // ta funcionando soma todas as calorias da tabela so tem que fazer um comando sql pra puxar so o que nos queremos
-    function somaCalorias()
+    function mostrar()
     {
-        $soma = 0;
-        try
+        try 
         {
             $db = new PDO("mysql:host=localhost;dbname=cardapio", "root", "");
-            foreach ($db->query("SELECT * FROM ingredientes") as $ingred)
+            $indrediente = [];
+
+            foreach ($db->query("SELECT *FROM ingredientes") as $ingred)
             {
-                $soma += $ingred['calorias'];      
-                
+                $indrediente[] = [
+                    "id" => $ingred['id_ingredientes'],
+                    "nome" => $ingred['nome'],
+                    "calorias" => $ingred['calorias'],
+                ];
             }
-            return $soma;  
-        } 
-        catch(PDOException $e)
+            return $indrediente;
+
+        } catch(PDOException $e)
         {
             die($e->getMessage());
         }
     }
+    
+    
 }
+    
+    
+    
 
-
-
-// tudas fincionalidades testadas a baixo
-                                 
-//$ing = new Ingredientes();
-/*$ing->setNome('massa');
-$ing->setCalorias(200);
-$ing->inserir();
-$ing->setNome('feija');
-$ing->setCalorias(250);
-$ing->alterar();
-$ing->excluir();
-$a = $ing->getid();
-echo $a;
+$churas = new Ingredientes();
+$a = $churas->mostrar();
 echo "<pre>";
-print_r($ing);
-
-
-$calorias = $ing->somaCalorias();
-echo $calorias;
-*/
-$a = new Refeicao();
-$soma = $a->somaCalorias();
-echo $soma;
-
-
-
-
-
+print_r($a);
 
 ?>
