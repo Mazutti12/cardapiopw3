@@ -10,14 +10,12 @@
     <title>Cardápio RU</title>
   </head>
   <body>
-
   <div class="w3-container">
     <br>
     <div class="form-floating mb-3" class="f">
       <input type="text" class="form-control" id="floatingInput" placeholder="">
       <label for="floatingInput">Pesquisar pratos</label>
       </div>
-    
  
     <div class="input-group">
 
@@ -103,8 +101,8 @@
                 
             </tr>
             <tr>
-                <th></th>
-                <th></th>
+                <td></td>
+                <td></td>
             </tr>
         </thead>
         <tbody></tbody>
