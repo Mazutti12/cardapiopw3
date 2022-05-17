@@ -1,12 +1,14 @@
 
 body {
-  background-color: white;
+  background-color: lightblue;
 }
 
-main{
+.w3-container{
 
-  color: white;
-    width: 80%;
+  background-color: white;
+    width: 60%;
+    height: 180%;
+    border-radius: 5px;
   
   }
 

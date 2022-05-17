@@ -11,11 +11,13 @@
   </head>
   <body>
 
-   
+  <div class="w3-container">
+    <br>
     <div class="form-floating mb-3" class="f">
       <input type="text" class="form-control" id="floatingInput" placeholder="">
       <label for="floatingInput">Pesquisar pratos</label>
-    </div>
+      </div>
+    
  
     <div class="input-group">
 
@@ -98,12 +100,14 @@
             <tr>
                 <th>Prato</th>
                 <th>Calorias</th>
+                
             </tr>
         </thead>
         <tbody></tbody>
     </table>
     <button type="button" class="btn btn-link">Sou nutricionista deste cardápio</button>
-  </div>
+    <br><br>
+    
 </div>
 
 
@@ -138,6 +142,8 @@
       </div>
     </div>
   </div>
+  </div>
+  
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
