@@ -81,7 +81,7 @@
 
       <select id="ano" class="form-select" aria-label="ano">
         <option selected>-Refeição-</option>
-        <option value="cafe">Café da Manhã</option>
+        <option value="cafe">Café</option>
         <option value="almoco">Almoço</option>
         <option value="janta">Janta</option>
         
