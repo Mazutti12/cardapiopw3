@@ -14,13 +14,17 @@ body {
 
 div {
   margin-top: 50px;
-  margin-left: 50px;
+  margin-left: 17%;
     width: 60%;
   
   }
 
-  tr {
+  .table {
     background-color: rgb(255, 250, 235);
+    border-radius: 5px;
+  }
+  .ingredientes {
+    background-color: rgb(248, 202, 200);
     border-radius: 5px;
   }
 
