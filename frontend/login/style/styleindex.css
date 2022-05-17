@@ -1,0 +1,48 @@
+
+body {
+  background-color: white;
+}
+
+main{
+
+  color: white;
+    width: 80%;
+  
+  }
+
+div {
+  margin-top: 50px;
+  margin-left: 50px;
+    width: 60%;
+  
+  }
+
+  .tb {
+    margin-top: 50px;
+      width: 60%;
+    
+    }
+
+.f {
+  margin-top: 50px;
+  margin-right: -50px;
+    
+}
+
+.input-group {
+  margin-top: -10px;
+  width: 118%;
+  
+}
+
+.form-select {
+  width: 5%;
+  margin-right: 20px;
+  display: table-cell;
+    float: left;
+}
+
+.buttons{
+  margin-top: 10px;
+  margin-right: 0px;
+}
