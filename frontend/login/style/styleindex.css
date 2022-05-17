@@ -19,17 +19,10 @@ div {
   
   }
 
-  .tb {
-    margin-top: 50px;
-      width: 60%;
-    
-    }
-
-.f {
-  margin-top: 50px;
-  margin-right: -50px;
-    
-}
+  tr {
+    background-color: rgb(255, 250, 235);
+    border-radius: 5px;
+  }
 
 .input-group {
   margin-top: -10px;
