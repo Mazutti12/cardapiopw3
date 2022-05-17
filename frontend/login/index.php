@@ -102,6 +102,10 @@
                 <th>Calorias</th>
                 
             </tr>
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
         </thead>
         <tbody></tbody>
     </table>
@@ -109,42 +113,6 @@
     <br><br>
     
 </div>
-
-
-
-
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <input type="hidden" id="id"/>
-        <div class="mb-3">
-          <label for="nome" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="nome" placeholder="Entre com o nome da pessoa">
-        </div>
-        <div class="mb-3">
-          <label for="sobrenome" class="form-label">Sobrenome</label>
-          <input type="text" class="form-control" id="sobrenome" placeholder="Entre com o sobrenome da pessoa">
-        </div>
-        <div class="mb-3 col-sm-12 col-md-6">
-          <label for="dtnasc" class="form-label">Data de Nascimento</label>
-          <input type="date" class="form-control" id="dtnasc">
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-        <button id="salvar" type="button" class="btn btn-success">Salvar</button>
-        <button id="alterar" type="button" class="btn btn-success">Alterar</button>
-      </div>
-    </div>
-  </div>
-  </div>
-  
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
