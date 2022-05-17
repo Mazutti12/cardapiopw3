@@ -98,11 +98,18 @@
             <tr>
                 <th>Prato</th>
                 <th>Calorias</th>
-                
             </tr>
             <tr>
-                <td></td>
-                <td></td>
+                <td>Salada de alface</td>
+                <td>5cal./100g</td>
+            </tr>
+            <tr>
+                <td>Sopa de legumes</td>
+                <td>20cal./100g</td>
+            </tr>
+            <tr>
+                <td>bife ao molho</td>
+                <td>50cal./100g</td>
             </tr>
         </thead>
         <tbody></tbody>
