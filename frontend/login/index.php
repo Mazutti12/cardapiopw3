@@ -114,7 +114,7 @@
         </thead>
         <tbody></tbody>
     </table>
-    <button type="button" class="btn btn-link" onclick= "window.location.href = 'http://localhost/cardapio/cardapiopw3/frontend/login/register.php'">Sou nutricionista deste cardápio</button>
+    <button type="button" class="btn btn-link" onclick= "window.location.href = 'http://localhost/cardapio/cardapiopw3/frontend/login/nutricionista.php'">Sou nutricionista deste cardápio</button>
     <br><br>
     
 </div>
