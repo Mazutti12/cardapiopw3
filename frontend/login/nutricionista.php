@@ -17,14 +17,9 @@
         <br><br>
         <b>Registro de nutricionista</b>
     <div class="form-group">
-    <label for="exampleInputEmail1">Nome</label>
-    <input type="text" class="form-control" id="nome" placeholder="Nome">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">E-mail</label>
-    <input type="email" class="form-control" id="email" placeholder="E-mail">
-  </div>
-  <div class="form-group">
+    <label for="exampleInputEmail1">Usuário</label>
+    <input type="text" class="form-control" id="nome" placeholder="Usuário">
+    <br>
     <label for="exampleInputPassword1">Senha</label>
     <input type="password" class="form-control" id="senha" placeholder="Senha">
     <br>
