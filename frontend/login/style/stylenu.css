@@ -6,9 +6,11 @@ body {
 .w3-container{
 
   background-color: white;
-    width: 60%;
+    width: 30%;
     height: 180%;
     border-radius: 5px;
+    margin-left: 33%;
+  
   }
 
 div {
@@ -17,6 +19,11 @@ div {
     width: 60%;
   
   }
+  b {
+    margin-bottom: 50px;
+    margin-left: 32%;
+    
+    }
 
   .table {
     background-color: rgb(255, 250, 235);
@@ -40,7 +47,8 @@ div {
     float: left;
 }
 
-.buttons{
+.btn{
+  margin-left: 10%;
   margin-top: 10px;
   margin-right: 0px;
 }
