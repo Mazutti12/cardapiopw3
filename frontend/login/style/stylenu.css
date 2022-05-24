@@ -6,7 +6,7 @@ body {
 .w3-container{
 
   background-color: white;
-    width: 30%;
+    width: 500px;
     height: 180%;
     border-radius: 5px;
     margin-left: 33%;
@@ -42,7 +42,7 @@ div {
 
 .form-select {
   width: 5%;
-  margin-right: 20px;
+  margin-right: 15px;
   display: table-cell;
     float: left;
 }
