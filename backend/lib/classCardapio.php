@@ -30,21 +30,7 @@ class Refeicao
 
 
     //puxar uma refeição em especifico 
-    function pesquisarRefeicao($idRefeicao)
-    {
-        try
-        {
-            $db = new PDO("mysql:host=localhost;dbname=cardapio;","root","");
-            $consulta = $db->prepare("SELECT * FROM refeicao WHERE id_refeicao = :id");
-            $consulta->execute( [":id" => $idRefeicao]);
-            $consulta->setFetchMode(PDO::FETCH_CLASS, 'Refeicao');
-            return $consulta->fetch();
-        }
-        catch(PDOException $e)
-        {
-            die($e);
-        }
-    }
+    
    
     function somaCaloria()
     {
@@ -73,6 +59,7 @@ class Ingredientes
     function setCalorias($c){$this->calorias = $c;}
     function getNome(){return $this->name;}
     function getCalorias(){return $this->calorias;}
+    function setId($i){$this->id = $i;}
     function getId(){return $this->id;}
 
     //fazer alguma verificação pra nao ter dois igredientes iguais
@@ -126,28 +113,21 @@ class Ingredientes
             die($e);
         }
     }
-    function mostrar()
-    {
-        try 
-        {
-            $db = new PDO("mysql:host=localhost;dbname=cardapio", "root", "");
-            $indrediente = [];
 
-            foreach ($db->query("SELECT *FROM ingredientes") as $ingred)
-            {
-                $indrediente[] = [
-                    "id" => $ingred['id_ingredientes'],
-                    "nome" => $ingred['nome'],
-                    "calorias" => $ingred['calorias'],
-                ];
-            }
-            return $indrediente;
-
-        } catch(PDOException $e)
-        {
-            die($e->getMessage());
-        }
+    /*
+        to tendo problema para atualizar 
+        
+    static function findByPk($id){
+        $db = new PDO("mysql:host=localhost;dbname=cardapio", "root", "");
+        $consulta = $db->prepare("SELECT  nome,calorias, id_ingredientes FROM ingredientes WHERE id_ingredientes = :id");
+        $consulta->execute([':id' => $id]);
+        $consulta->setFetchMode(PDO::FETCH_CLASS, 'Ingredientes');
+        return $consulta->fetch();
+        
     }
+*/
+    
+   
     
     
 }
@@ -155,9 +135,6 @@ class Ingredientes
     
     
 
-$churas = new Ingredientes();
-$a = $churas->mostrar();
-echo "<pre>";
-print_r($a);
+
 
 ?>
