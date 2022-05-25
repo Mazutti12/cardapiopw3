@@ -12,17 +12,46 @@
 
   <style>
     h1{ margin-left: 29%; font-family: "Lucida Console", "Monaco", monospace}
-    body {background-color: rgb(231, 249, 255);}
-    .w3-container{background-color: rgb(255, 255, 255); width: 1150px; height: 180%; border-radius: 5px; margin-left: 18%;}
+    body {background-color: rgb(84, 174, 96);}
+    .fundo {
+    background-color: rgb(250, 252, 250);
+  margin-top: 0px;
+  margin-left: -1%;
+  width: 110%;
+  }
+    .w3-container{margin-top: 50px; background-color: rgb(255, 255, 255); width: 1150px; height: 180%; border-radius: 5px; margin-left: 18%;}
+    div {
+      margin-top: 0px;
+  margin-left: 0%;
+    width: 60%;
+  
+  }
+  .input-group {
+  margin-left: 17%;
+
+  
+  }
+  .form-floating {
+  margin-top: 50px;
+  margin-left: 17%;
+    width: 60%;
+  
+  }
+  .tb {
+  margin-top: 50px;
+  margin-left: 17%;
+  
+  }
     
   </style>
 
 
   <body>
+  <div class = "fundo">
   <div class="w3-container">
   <img src="img/logo.png" alt="Logo IFRS" width="500" height="200">
   <br>
-        <h1>Selção de cardápio</h1>
+        <h1>Seleção de cardápio</h1>
     <div class="form-floating mb-3" class="f">
       <input type="text" class="form-control" id="floatingInput" placeholder="">
       <label for="floatingInput">Pesquisar pratos</label>
@@ -130,12 +159,14 @@
                 
                 <td><button type="button" class="btn btn-warning">Mostrar ingredientes</button></td>
             </tr>
+            
         </thead>
         <tbody></tbody>
     </table>
     <button type="button" class="btn btn-link" onclick= "window.location.href = 'http://localhost/cardapio/cardapiopw3/frontend/login/nutricionista.php'">Sou nutricionista deste cardápio</button>
     <br><br>
     
+</div>
 </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

@@ -13,10 +13,13 @@
 
   <style>
     .w3-container{background-color: white; width: 600px; height: 180%; border-radius: 5px; margin-left: 31%;}
+    body {background-color: rgb(84, 174, 96);}
+    .fundo {background-color: rgb(250, 252, 250); margin-top: 0px; margin-left: -3%; width: 110%;}
     h2 {margin-bottom: 50px;margin-left: 10%; font-family: "Lucida Console", "Monaco", monospace}
 
   </style>
       
+      <div class = "fundo">
   <div class="w3-container">
   <img src="img/logo.png" alt="Logo IFRS" width="500" height="200">
     <form>
@@ -34,6 +37,7 @@
   <br><br>
   </div>
 </form> 
+</div>
 </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
