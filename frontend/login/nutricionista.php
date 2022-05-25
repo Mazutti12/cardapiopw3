@@ -10,12 +10,18 @@
     <title>Cardápio RU</title>
   </head>
   <body>
+
+  <style>
+    .w3-container{background-color: white; width: 500px; height: 180%; border-radius: 5px; margin-left: 34%;}
+    h2 {margin-bottom: 50px;margin-left: 14%;}
+
+  </style>
       
   <div class="w3-container">
-
+  <img src="img/logo.png" alt="Logo IFRS" width="500" height="200">
     <form>
-        <br><br>
-        <b>Registro de nutricionista</b>
+        <br>
+        <h2>Registro de nutricionista</h2>
     <div class="form-group">
     <label for="exampleInputEmail1">Usuário</label>
     <input type="text" class="form-control" id="nome" placeholder="Usuário">

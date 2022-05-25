@@ -9,9 +9,20 @@
     <link type="text/css" href="style/styleindex.css" rel="stylesheet"/>
     <title>Cardápio RU</title>
   </head>
+
+  <style>
+    h1{ margin-left: 33%;}
+    body {background-color: rgb(231, 249, 255);}
+    .w3-container{background-color: rgb(255, 255, 255); width: 1150px; height: 180%; border-radius: 5px; margin-left: 18%;}
+    
+  </style>
+
+
   <body>
   <div class="w3-container">
-    <br>
+  <img src="img/logo.png" alt="Logo IFRS" width="500" height="200">
+  <br>
+        <h1>Selção de cardápio</h1>
     <div class="form-floating mb-3" class="f">
       <input type="text" class="form-control" id="floatingInput" placeholder="">
       <label for="floatingInput">Pesquisar pratos</label>
