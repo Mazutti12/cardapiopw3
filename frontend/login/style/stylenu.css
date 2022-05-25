@@ -3,27 +3,12 @@ body {
   background-color: rgb(231, 249, 255);
 }
 
-.w3-container{
-
-  background-color: white;
-    width: 500px;
-    height: 180%;
-    border-radius: 5px;
-    margin-left: 33%;
-  
-  }
-
 div {
   margin-top: 50px;
   margin-left: 17%;
     width: 60%;
   
   }
-  b {
-    margin-bottom: 50px;
-    margin-left: 32%;
-    
-    }
 
   .table {
     background-color: rgb(255, 250, 235);
