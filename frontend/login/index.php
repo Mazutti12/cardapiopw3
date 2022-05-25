@@ -11,7 +11,7 @@
   </head>
 
   <style>
-    h1{ margin-left: 33%;}
+    h1{ margin-left: 29%; font-family: "Lucida Console", "Monaco", monospace}
     body {background-color: rgb(231, 249, 255);}
     .w3-container{background-color: rgb(255, 255, 255); width: 1150px; height: 180%; border-radius: 5px; margin-left: 18%;}
     

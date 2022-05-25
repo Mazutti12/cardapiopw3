@@ -12,8 +12,8 @@
   <body>
 
   <style>
-    .w3-container{background-color: white; width: 500px; height: 180%; border-radius: 5px; margin-left: 34%;}
-    h2 {margin-bottom: 50px;margin-left: 14%;}
+    .w3-container{background-color: white; width: 600px; height: 180%; border-radius: 5px; margin-left: 31%;}
+    h2 {margin-bottom: 50px;margin-left: 10%; font-family: "Lucida Console", "Monaco", monospace}
 
   </style>
       
