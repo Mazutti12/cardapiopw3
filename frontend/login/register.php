@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
+
+
 <body>
 <form method="post" action="" name="signup-form">
 <div class="form-element">

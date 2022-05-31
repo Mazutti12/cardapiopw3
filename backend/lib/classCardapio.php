@@ -38,7 +38,7 @@ class Refeicao
         $soma = 0;
             foreach($a as $key=>$value)
             {
-                $soma +=$value;
+                $soma +=$value/*['calorias']*/;
             }
 
         return $soma;
