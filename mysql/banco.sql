@@ -38,3 +38,23 @@ senha varchar(100) not null
 
 
 ALTER TABLE refeicao ADD CONSTRAINT FK_RefeicaoIngrediente FOREIGN KEY (id_refeicao) REFERENCES ingredientes (id_ingredientes);
+
+SELECT
+    cardapio.dia,
+    cardapio.tipo,
+    refeicao.descricao
+FROM
+    cardapio C
+INNER JOIN
+	cardapio_refeicao
+ON cardapio.id = refeicao.id_refeicao;
+
+SELECT
+    ingredientes.nome,
+    ingredientes.calorias,
+    refeicao.descricao
+FROM
+    ingredientes I
+INNER JOIN
+
+ON ingredientes.id_ingredientes = refeicao.id_refeicao
