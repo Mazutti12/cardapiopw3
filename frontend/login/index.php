@@ -34,9 +34,10 @@
       <label for="floatingInput">Pesquisar pratos</label>
       </div>
  
+      <form name="form" action="" method="get">
     <div class="input-group">
 
-     <select id="dia" class="form-select" aria-label="dia">
+     <select id="dia" name = "dia" class="form-select" aria-label="dia">
         <option selected>-Dia-</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -72,29 +73,29 @@
 
         
       </select>
-      <select id="mes" class="form-select" aria-label="mes">
+      <select id="mes" name = "mes" class="form-select" aria-label="mes">
         <option selected>-Mês-</option>
-        <option value="jan">Janeiro</option>
-            <option value="fev">Fevereiro</option>
-            <option value="mar">Março</option>
-            <option value="abr">Abril</option>
-            <option value="mai">Maio</option>
-            <option value="jun">Junho</option>
-            <option value="jul">Julho</option>
-            <option value="ag">Agosto</option>
-            <option value="set">Setembro</option>
-            <option value="out">Outubro</option>
-            <option value="nov">Novembro</option>
-            <option value="dez">Dezembro</option>
+        <option value="1">Janeiro</option>
+            <option value="2">Fevereiro</option>
+            <option value="3">Março</option>
+            <option value="4">Abril</option>
+            <option value="5">Maio</option>
+            <option value="6">Junho</option>
+            <option value="7">Julho</option>
+            <option value="8">Agosto</option>
+            <option value="9">Setembro</option>
+            <option value="10">Outubro</option>
+            <option value="11">Novembro</option>
+            <option value="12">Dezembro</option>
       </select>
       
-      <select id="ano" class="form-select" aria-label="ano">
+      <select id="ano" name = "ano" class="form-select" aria-label="ano">
         <option selected>-Ano-</option>
-        <option value="22">2022</option>
-        <option value="23">2023</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
       </select>
 
-      <select id="ano" class="form-select" aria-label="ano">
+      <select id="refeicao" name = "refeicao" class="form-select" aria-label="refeicao">
         <option selected>-Refeição-</option>
         <option value="cafe">Café</option>
         <option value="almoco">Almoço</option>
@@ -103,11 +104,37 @@
       </select>
 
       <div class="buttons">
-        <button type="button" class="btn btn-dark">Buscar</button>
+        <input type="submit" class="btn btn-dark" value = "Buscar"></button>
         <button type="button" class="btn btn-danger">Limpar filtros</button>
       </div>
+      
+      <?php
+
+        if($_GET["dia"] != "-Dia-"){
+          $dia = $_GET["dia"];
+        }else{
+          $dia = 1;
+        }
+        
+        if($_GET["mes"] != "-Mês-"){
+        $mes = $_GET["mes"];
+        }else{
+          $mes = 1;
+        }
+      
+        if($_GET["ano"] != "-Ano-"){
+        $ano = $_GET["ano"];
+        }else{
+          $ano = 1;
+        }
+        
+      
+      $data = new DateTime($mes.'/'.$dia.'/'.$ano);
+      echo $data->format('d/m/Y');
+    ?>
 
     </div>
+</form>
 
     <div class="tb">
     <table class="table">
