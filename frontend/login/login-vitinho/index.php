@@ -211,8 +211,8 @@ if (!isset($_SESSION["username"])) {
           </thead>
           <tbody></tbody>
         </table>
-        <button type="button" class="btn btn-link" onclick="window.location.href = 'http://localhost/pw3/cardapiopw3/frontend/login/login-vitinho/login.php'">Sou nutricionista deste cardápio</button>
-        <button type="button" class="btn btn-link" onclick="window.location.href = 'http://localhost/pw3/cardapiopw3/frontend/login/login-vitinho/nutricionista.php'">Cadastrar nova nutricionista</button>
+        <button type="button" class="btn btn-link" onclick="window.location.href = 'http://localhost/cardapiopw3/frontend/login/login-vitinho/login.php'">Sou nutricionista deste cardápio</button>
+        <button type="button" class="btn btn-link" onclick="window.location.href = 'http://localhost/cardapiopw3/frontend/login/login-vitinho/nutricionista.php'">Cadastrar nova nutricionista</button>
         <br><br>
 
       </div>

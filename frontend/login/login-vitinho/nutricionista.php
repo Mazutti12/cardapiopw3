@@ -51,7 +51,7 @@ VALUES ('$username', '".md5($password)."', '$email', '$trn_date')";
         <input type="text" name="username" class="form-control" placeholder="Username" required />
         <input type="email" name="email" class="form-control" placeholder="Email" required />
         <input type="password" name="password" class="form-control" placeholder="Password" required />
-        <button type="button" class="btn btn-link" onclick= "window.location.href = 'http://localhost/pw3/cardapiopw3/frontend/login/login-vitinho/index.php'">Voltar</button>
+        <button type="button" class="btn btn-link" onclick= "window.location.href = 'http://localhost/cardapiopw3/frontend/login/login-vitinho/index.php'">Voltar</button>
         <input type="submit" name="submit" value="Register" />
       </form>
     </div>
