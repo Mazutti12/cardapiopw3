@@ -24,7 +24,7 @@
       <form name="form" action="" method="get">
     <div class="input-group">
 
-    <input type = "date"></input>
+    <input type = "date" class = "calend"></input>
 
       <select id="refeicao" name = "refeicao" class="form-select" aria-label="refeicao">
         <option selected>-Refeição-</option>
