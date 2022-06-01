@@ -40,7 +40,7 @@ and password='".md5($password)."'";
 <br>
 <input name="submit" type="submit" value="Login" />
 </form>
-<p>Not registered yet? <a href='registration.php'>Register Here</a></p>
+<p>Not registered yet? <a href='nutricionista.php'>Register Here</a></p>
 </div>
 <?php } ?>
 </body>
