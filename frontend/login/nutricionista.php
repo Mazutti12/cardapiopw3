@@ -10,15 +10,6 @@
     <title>Cardápio RU</title>
   </head>
   <body>
-
-  <style>
-    .w3-container{background-color: white; width: 600px; height: 180%; border-radius: 5px; margin-left: 31%;}
-    body {background-color: rgb(84, 174, 96);}
-    .fundo {background-color: rgb(250, 252, 250); margin-top: 0px; margin-left: -3%; width: 110%;}
-    h2 {margin-bottom: 50px;margin-left: 10%; font-family: "Lucida Console", "Monaco", monospace}
-
-  </style>
-      
       <div class = "fundo">
   <div class="w3-container">
   <img src="img/logo.png" alt="Logo IFRS" width="500" height="200">
