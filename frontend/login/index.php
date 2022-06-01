@@ -10,6 +10,19 @@
     <title>Cardápio RU</title>
   </head>
 
+  <style>
+    h1{ margin-left: 29%; font-family: "Lucida Console", "Monaco", monospace}
+    body {background-color: rgb(84, 174, 96);}
+    .fundo {background-color: rgb(250, 252, 250); margin-top: 0px; margin-left: -1%; width: 110%;}
+    .w3-container{margin-top: 50px; background-color: rgb(255, 255, 255); width: 1150px; height: 180%; border-radius: 5px; margin-left: 18%;}
+    div {margin-top: 0px; margin-left: 0%; width: 60%;}
+    .input-group {margin-left: 17%;}
+    .form-floating {margin-top: 50px; margin-left: 17%; width: 60%;}
+    .tb {margin-top: 50px; margin-left: 17%;}
+    
+  </style>
+
+
   <body>
   <div class = "fundo">
   <div class="w3-container">
@@ -21,12 +34,67 @@
       <label for="floatingInput">Pesquisar pratos</label>
       </div>
  
-      <form name="form" action="" method="get">
     <div class="input-group">
 
-    <input type = "date" class = "calend"></input>
+     <select id="dia" class="form-select" aria-label="dia">
+        <option selected>-Dia-</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
 
-      <select id="refeicao" name = "refeicao" class="form-select" aria-label="refeicao">
+        
+      </select>
+      <select id="mes" class="form-select" aria-label="mes">
+        <option selected>-Mês-</option>
+        <option value="1">Janeiro</option>
+            <option value="2">Fevereiro</option>
+            <option value="3">Março</option>
+            <option value="4">Abril</option>
+            <option value="5">Maio</option>
+            <option value="6">Junho</option>
+            <option value="7">Julho</option>
+            <option value="8">Agosto</option>
+            <option value="9">Setembro</option>
+            <option value="10">Outubro</option>
+            <option value="11">Novembro</option>
+            <option value="12">Dezembro</option>
+      </select>
+      
+      <select id="ano" class="form-select" aria-label="ano">
+        <option selected>-Ano-</option>
+        <option value="22">2022</option>
+        <option value="23">2023</option>
+      </select>
+
+      <select id="refeicao" class="form-select" aria-label="refeicao">
         <option selected>-Refeição-</option>
         <option value="cafe">Café</option>
         <option value="almoco">Almoço</option>
@@ -34,12 +102,20 @@
         
       </select>
 
+      <?php
+
+      echo $_GET['dia']
+        
+
+
+      ?>
+
       <div class="buttons">
-        <input type="submit" class="btn btn-dark" value = "Buscar"></button>
+        <button type="button" class="btn btn-success">Buscar</button>
         <button type="button" class="btn btn-danger">Limpar filtros</button>
       </div>
+
     </div>
-</form>
 
     <div class="tb">
     <table class="table">
