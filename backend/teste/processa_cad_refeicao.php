@@ -12,14 +12,14 @@
 	
 	if(mysqli_affected_rows($conn) != 0){
 				echo "
-					<META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/cardapio/cardapiopw3/backend/teste/cadastro.php'>
+					<META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/come%20e%20beebe/cardapiopw3/backend/teste/cadastro.php'>
 					<script type=\"text/javascript\">
 						alert(\"Refeição cadastrada com Sucesso.\");
 					</script>
 				";	
 			}else{
 				echo "
-					<META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/cardapio/cardapiopw3/backend/teste/cadastro.php'>
+					<META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/come%20e%20beebe/cardapiopw3/backend/teste/cadastro.php'>
 					<script type=\"text/javascript\">
 						alert(\"A refeição não foi cadastrada com Sucesso.\");
 					</script>

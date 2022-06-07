@@ -9,14 +9,15 @@ tipo varchar (15)
 );
 
 create table refeicao(
-id_refeicao int AUTO_INCREMENT NOT NULL PRIMARY KEY,
-descricao varchar(100) not null,
-id_ingredientes int NOT NULL
+id int AUTO_INCREMENT NOT NULL PRIMARY KEY,
+nome varchar(100) not null,
+data_refeicao date not null,
+tipo_refeicao int not null, 
+id_ingredientes json NOT NULL
 );
 
 create table ingredientes(
-id_ingredientes int not null AUTO_INCREMENT PRIMARY KEY,
-id_refeicao int not null ,
+id int not null AUTO_INCREMENT PRIMARY KEY,
 nome varchar(100) not null,
 calorias int not null
 );
@@ -45,7 +46,7 @@ create table refeicao_ingredientes(
     id_ingredientes int not null
 )
 
-ALTER TABLE refeicao ADD CONSTRAINT FK_RefeicaoIngrediente FOREIGN KEY (id_refeicao) REFERENCES ingredientes (id_ingredientes);
+ALTER TABLE refeicao ADD CONSTRAINT FK_RefeicaoIngrediente FOREIGN KEY (id_ingredientes) REFERENCES ingredientes (id);
 
 SELECT
     cardapio.dia,

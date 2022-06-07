@@ -10,14 +10,14 @@ $resultado_ingredientes = mysqli_query($conn, $result_ingredientes);
 
 if(mysqli_affected_rows($conn) != 0){
             echo "
-                <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/cardapiopw3/backend/teste/cadastroingre.php'>
+                <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/come%20e%20beebe/cardapiopw3/backend/teste/cadastroingre.php'>
                 <script type=\"text/javascript\">
                     alert(\"Ingredientes cadastrados com Sucesso.\");
                 </script>
             ";	
         }else{
             echo "
-                <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/cardapiopw3/backend/teste/cadastroingre.php'>
+                <META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/come%20e%20beebe/cardapiopw3/backend/teste/cadastroingre.php'>
                 <script type=\"text/javascript\">
                     alert(\"Os ingredientes não foram cadastrados com Sucesso.\");
                 </script>
