@@ -8,17 +8,17 @@
     <link type="text/css" href="style/styleindex.css" rel="stylesheet"/>
     <title>Cardápio RU</title>
   </head>
-  <?php
-session_start();
-if (!isset($_SESSION["username"])) {
-  header("Location: login.php");
-  exit();
-}
-?>
+<?php
+// session_start();
+// if (!isset($_SESSION["username"])) {
+//   header("Location: login.php");
+//   exit();
+// }
+?> 
   <body>
   <div class = "fundo">
   <div class="w3-container">
-  <img src="img/logo.png" alt="Logo IFRS" width="500" height="200">
+  <img src="logo.png" alt="Logo IFRS" width="500" height="200">
   <br>
         <h1>Seleção de cardápio</h1>
     <div class="form-floating mb-3" class="f">
